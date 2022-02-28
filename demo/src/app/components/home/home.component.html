@@ -1,0 +1,51 @@
+<p>home works! <strong>{{name}}</strong></p>
+
+<div class="container">
+    <div class="row">
+        <!-- <div class="col-6 offset-3"> -->
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let emp of employeeData; let i=index">
+                        <th scope="row">{{i+1}}</th>
+                        <td>{{emp.name}}</td>
+                        <td>{{emp.age}}</td>
+                        <td>{{emp.email}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        <!-- </div> -->
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <!-- <div class="col-6 offset-3"> -->
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">UserID</th>
+                        <th scope="col">Body</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let data of apiData; let i=index">
+                        <th scope="row">{{i+1}}</th>
+                        <td>{{data.title}}</td>
+                        <td>{{data.userId}}</td>
+                        <td>{{data.body}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        <!-- </div> -->
+    </div>
+</div>
